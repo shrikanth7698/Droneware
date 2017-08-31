@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Droneware</title>
+<link rel="stylesheet" href="startupcss.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(
+
+  function() {
+    $('#smooth1,#smooth2,#smooth3,#smooth4').on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  $('.g').hover(function() {
+    $('.a').css('width', '120px');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.a').css('width', '60px');
+  });
+  $('.h').hover(function() {
+    $('.b').css('width', '120px');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.b').css('width', '60px');
+  });
+  $('.i').hover(function() {
+    $('.c').css('width', '120px');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.c').css('width', '60px');
+  });
+  $('.j').hover(function() {
+    $('.d').css('width', '120px');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.d').css('width', '60px');
+  });
+  $('.k').hover(function() {
+    $('.e').css('width', '120px');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.e').css('width', '60px');
+  });
+  $('.l').hover(function() {
+    $('.f').css('width', '120px');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.f').css('width', '60px');
+  });
+});
+
+</script>
+<body>
+  <nav class="nav">
+      <ul class="ul">
+      <li> <a id="smooth1"href="#home" style="font-family:kelvetica;"> home </a> </li>
+      <li> <a id="smooth1"href="#drones" style="font-family:kelvetica;"> Drones </a> </li>
+      <li> <a id="smooth2"href="#plans" style="font-family:kelvetica;"> plans </a> </li>
+      <li > <a id="smooth4"href="#closure" style="font-family:kelvetica;">Contact</a> </li>
+      <li style="float:right;"> <a href="login.html" style="font-family:kelvetica;"> <img style="width:20px;height:20px;" src="login.png"></a></li>
+    </ul>
+  </nav>
+    <video id="home"loop muted autoplay poster="droneimage.jpg" class="fullscreen-bg__video">
+        <source src="videoback.mp4" type="video/mp4">
+    </video>
+
+  <div class="caption">
+    <div class="caption1">
+    <p style="font-size:100px;color:#03A9F4;height:25px;font-family:kelvetica;"><b>Droneware</b></p>
+      <p style="font-size:50px;color:white;font-family:kelvetica;">wherever you go</p>
+
+          <input style="font-family:kelvetica;width:120px;height:70px;font-size:30px;border-radius:55px;margin-right:10px;" type="button" class="butn" value="buy">
+          <input style="font-family:kelvetica;width:120px;height:70px;font-size:30px;border-radius:55px;" type="button" class="butn" value="rent">
+
+    </div>
+  </div>
+<div style="color: #777;background-color:white;text-align:center;padding:5px 50px;text-align: justify;">
+    <h4 id="drones"class="heading"style="font-size:25px;color:#03A9F4;font-family:kelvetica;margin-top:850px;"><b>Drones</b></h4>
+      <center>
+      <table width=100%>
+        <tr>
+          <td>
+            <center>
+            <div class="g">
+              <center>
+              <img src="mavic.png">
+              <h3 style="font-family:kelvetica;font-size:20px;margin-top:-50px;">mavic pro</h3>
+              <hr class="a" style="width:60px;color:#03A9F4">
+              <p style="font-family:kelvetica;width:80%;">The DJI Mavic Pro is a small yet powerful drone that turns the sky into your creative canvas easily and without worry,
+helping you make every moment an aerial moment. </p>
+                <input style="font-family:kelvetica;" type="button" class="butn1" value="buy">
+                <input style="font-family:kelvetica;" type="button" class="butn1" value="rent">
+            </center>
+            </div>
+          </center>
+          </td>
+          <td>
+            <center>
+            <div class="h">
+              <center>
+              <img src="spark.png">
+              <h3 style="font-family:kelvetica;font-size:20px;margin-top:-50px;">spark</h3>
+              <hr class="b"style="width:60px;color:#03A9F4">
+              <p style="font-family:kelvetica;width:80%;">Spark is a mini drone that features all of DJI's signature technologies,
+                allowing you to seize the moment whenever you feel inspired.</p>
+                <input style="font-family:kelvetica;" type="button" class="butn1" value="buy">
+                <input style="font-family:kelvetica;" type="button" class="butn1" value="rent">
+            </center>
+            </div>
+          </center>
+          </td>
+            <td>
+              <center>
+              <div class="i">
+                <center>
+                <img src="phantom3se.png">
+                <h3 style="font-family:kelvetica;font-size:20px;margin-top:-50px;">phantom 3 se</h3>
+                <hr class="c" style="width:60px;color:#03A9F4">
+                <p style="font-family:kelvetica;width:100%;">TPerfect for beginners or experienced drone operators, the Phantom 3 SE features the
+                  reliability, intuitive controls,
+                  excellent image quality, and powerful flight performance that make DJI’s Phantom series so iconic</p>
+                  <input style="font-family:kelvetica;" type="button" class="butn1" value="buy">
+                  <input style="font-family:kelvetica;" type="button" class="butn1" value="rent">
+              </center>
+              </div>
+            </center>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+            <div class="j">
+              <center>
+              <img src="phantom4advanced.png">
+              <h3 style="font-family:kelvetica;font-size:20px;margin-top:-50px;">phantom 4</h3>
+              <hr class="d"style="width:60px;color:#03A9F4">
+              <p style="font-family:kelvetica;">An uprated camera is equipped with a 1-inch 20-megapixel sensor capable of
+                shooting 4K/60 fps video and Burst Mode stills at 14 fps. The FlightAutonomy system includes
+                five vision sensors for 2-directional obstacle sensing and forward-vision obstacle avoidance.</p>
+                <input style="font-family:kelvetica;" type="button" class="butn1" value="buy">
+                <input style="font-family:kelvetica;" type="button" class="butn1" value="rent">
+            </center>
+            </div>
+          </center>
+          </td>
+          <td>
+            <center>
+            <div class="k">
+              <center>
+              <img src="phantom4pro.png">
+              <h3 style="font-family:kelvetica;font-size:20px;margin-top:-50px;">phantom 4 pro</h3>
+              <hr class="e"style="width:60px;color:#03A9F4">
+              <p style="font-family:kelvetica;">Equipped with a 1-inch sensor, the Phantom 4 Pro camera
+                shoots video at up to 4K 60fps and 20 megapixel stills.
+                It has 4 directions of obstacle avoidance, a 30-minute flight time, and 4.1mi (7km) transmission range.</p>
+                <input style="font-family:kelvetica;" type="button" class="butn1" value="buy">
+                <input style="font-family:kelvetica;" type="button" class="butn1" value="rent">
+            </center>
+            </div>
+          </center>
+          </td>
+            <td>
+              <center>
+              <div class="l">
+                <img src="phantom4k.png">
+                <h3 style="font-family:kelvetica;font-size:20px;margin-top:-50px;">Phantom 3 4k</h3>
+                <hr class="f"style="width:60px;color:#03A9F4">
+                <p style="font-family:kelvetica;">The Phantom 3 4K is specially designed for anyone to capture amazing
+                  4K aerial images and video in areas with weak GPS signals and can even fly indoors.</p>
+                  <input style="font-family:kelvetica;" type="button" class="butn1" value="buy">
+                  <input style="font-family:kelvetica;" type="button" class="butn1" value="rent">
+              </div>
+            </center>
+            </td>
+        </tr>
+      </table>
+      <br>
+      <br>
+    </center>
+</div>
+<div id="plans"class="semi1">
+<div class="bgimg-2">
+<center>
+      <h4 id="plans"style="font-size:35px;color:white;height:25px;font-family:kelvetica;"><b>Droneware rental plans</b></h4>
+  <table>
+    <td>
+      <center>
+        <div class="plancard">
+          <p style="font-family:kelvetica;font-size:35px;color:#03A9F4">Spark</p>
+          <p style="font-family:kelvetica;font-size:20px;color:white;text-align:center;">&#8377; 200/day</p>
+          <table>
+            <td><img style="background-color:white; border-radius:45px;"src="spark.png" width="90px" height="90px"></td>
+            <td><img style="background-color:white; border-radius:45px;"src="phantom4advanced.png" width="90px" height="90px"></td>
+          </table>
+          <br>
+          <br>
+          <input style="font-family:kelvetica;width:130px;" type="button" class="butn" value="select plan">
+        </div>
+      </center>
+    </td>
+    <td>
+      <center>
+        <div class="plancard">
+            <p style="font-family:kelvetica;font-size:35px;color:#03A9F4">Flame</p>
+            <p style="font-family:kelvetica;font-size:20px;color:white;text-align:center;">&#8377; 2000/month</p>
+            <table>
+              <td><img style="background-color:white; border-radius:40px;"src="spark.png" width="80px" height="80px"></td>
+              <td><img style="background-color:white; border-radius:40px;"src="phantom4advanced.png" width="80px" height="80px"></td>
+              <td><img style="background-color:white; border-radius:40px;"src="phantom4pro.png" width="80px" height="80px"></td>
+            </table>
+            <br>
+            <br>
+            <input style="font-family:kelvetica;margin-top:5px;width:130px;" type="button" class="butn" value="select plan">
+        </div>
+      </center>
+    </td>
+    <td>
+      <center>
+        <div class="plancard">
+            <p style="font-family:kelvetica;font-size:35px;color:#03A9F4">Blaze</p>
+            <p style="font-family:kelvetica;font-size:20px;color:white;text-align:center;">&#8377; pay as you go</p>
+            <table>
+              <td><img style="background-color:white; border-radius:35px;"src="spark.png" width="70px" height="70px"></td>
+              <td><img style="background-color:white; border-radius:35px;"src="phantom4advanced.png" width="70px" height="70px"></td>
+              <td><img style="background-color:white; border-radius:35px;"src="phantom4pro.png" width="70px" height="70px"></td>
+              <td><img style="background-color:white; border-radius:35px;"src="mavic.png" width="70px" height="70px"></td>
+            </table>
+            <br>
+            <br>
+            <input style="font-family:kelvetica;margin-top:10px;width:130px;" type="button" class="butn" value="select plan">
+        </div>
+      </center>
+    </td>
+  </table>
+</center>
+</div>
+</div>
+
+
+<!--
+<div id="memes"style="position:relative;">
+<div style="color: #777;background:white;text-align:center;padding:50px 80px;text-align: justify;">
+
+</div>
+</div>-->
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 id="closure" style="text-align:center;color:white;">contact</h3>
+
+    <center>
+      <table>
+        <td>
+          <div class="zoomin">
+            <a href="">
+            <img style="margin:10px;" width="50px" height="50px" src="fb.png">
+            </a>
+          </div>
+        </td>
+        <td>
+          <div class="zoomin">
+            <a href="">
+            <img style="margin:10px;" width="50px" height="50px" src="insta.png">
+            </a>
+          </div>
+        </td>
+        <td>
+          <div class="zoomin">
+            <img style="margin:10px;" width="50px" height="50px" src="twiti.png">
+          </div>
+        </td>
+        <td>
+          <div class="zoomin">
+            <img style="margin:10px;" width="50px" height="50px" src="in.png">
+          </div>
+        </td>
+        <td>
+          <div class="zoomin">
+            <img style="margin:10px;" width="50px" height="50px" src="g+.png">
+          </div>
+        </td>
+      </table>
+    </center>
+    <p style="text-align:center;color:white;">&copy; 2017 Droneware All Rights Reserved.</P>
+</body>
+</html>

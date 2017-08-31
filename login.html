@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Droneware - login</title>
+<link rel="stylesheet" href="centre.css"></link>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<script>
+  function btnclick()
+  {
+    var str=document.getElementById("email").value;
+    if(str===""){
+      alert("enter email id");
+    }
+    else{
+      alert("\t\t\t\t\t\twelcome\n"+str);
+    }
+  }
+</script>
+</head>
+<body style="background-color:#e3e3e3">
+    <video loop muted autoplay poster="droneimage.jpg" class="fullscreen-bg__video">
+        <source src="videoback.mp4" type="video/mp4">
+    </video>
+
+<div class="center-div">
+<h2 id="logo" style="font-family:kelvetica;color:white;font-size:50px;">Drone<span style="color:#03A9F4;font-size:50px;">ware</span></h2>
+<br>
+<br>
+<h3 id="signin" style="color:white;font-family:kelvetica;font-size:40px;margin-left:530px">Sign in</h3>
+<center>
+<form >
+  <br>
+  <br>
+  <label style="text-align:left; margin-right:275px; color:#03a9f4; font-family:kelvetica; font-size:30px;">Email</label>
+  <br>
+  <input id="email" type="text" required>
+  <br>
+  <br>
+  <br>
+  <label style="text-align:left; margin-right:220px; color:#03a9f4; font-family:kelvetica; font-size:30px;">Password</label>
+  <br>
+  <input id="pass"type="password">
+  <br>
+  <br>
+  <a  href="http://www.google.co.in" >forgot email?</a>
+  <br>
+  <br>
+  <br>
+  <input type="button" id="button"  class="butn" value="Login" onclick="btnclick()">
+</form>
+</center>
+</div>
+</body>
+</html>

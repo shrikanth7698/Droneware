@@ -1,0 +1,127 @@
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('droneimage.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@font-face {
+        font-family: "kelvetica";
+        src: url(kelvetica.otf);
+}
+.center-div
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(0,0,0,0.6);
+  font-family: helvetica;
+
+}
+.center-div #logo{
+  margin-left: 15px;
+}
+
+.center-div #signin{
+  margin-left: 15px;
+}
+
+.center-div #email{
+  outline: none;
+  width: 23%;
+  font-size: 20px;
+  height: 30px;
+  color: white;
+  font-family: kelvetica;
+  background-color: transparent;
+  border-top: solid transparent;
+  border-left: solid transparent;
+  border-right: solid transparent;
+  border-bottom: 2px  solid white;
+}
+
+.center-div #pass {
+  outline: none;
+  width: 23%;
+  font-size: 20px;
+  height: 30px;
+  font-family: kelvetica;
+  color: white;
+  background-color: transparent;
+  border-top: solid transparent;
+  border-left: solid transparent;
+  border-right: solid transparent;
+  border-bottom: 2px  solid white;
+}
+
+.center-div a{
+  margin-right:220px;
+  font-family:kelvetica;
+  color: white;
+}
+
+.butn {
+  box-shadow: none !important;
+  border: 2px solid #03a9f4;
+  width: 120px;
+  height: 50px;
+  font-family: kelvetica;
+  font-size: 20px;
+  background-color:  transparent;
+  border-radius: 25px;
+  outline: 0;
+  color: #ffffff;
+
+
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+
+.butn:hover{
+
+  width: 170px;
+  height: 60px;
+  border-radius: 45px;
+  font-size: 30px;
+  background-color:  transparent;
+}
+
+.table{
+  font-family: helvetica;
+}
